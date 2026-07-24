@@ -1,0 +1,21 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Mar 12 16:20:55 2026 
+Best design point: 1
+Design specs: 
+	hanus_vco_tb_1	corner	Nominal - 
+	freq		883.8M
+	p(50. (/vout4+ /vout4-)); pss dBmP		Error	No
+	p(50. (/vout4+ /vout4-)); pss dBmP; 1		Error	No
+	harm=1 freq; pss (Hz)		Error	No
+	Phase Noise; dBc/Hz, Relative Harmonic = 1		Error	No
+	(CorFreq:PN-3dB)		Error	No
+	output noise: (PM, DSB, dBc/Hz)		Error	No
+	output noise; 1M;(PM, DSB, dBc/Hz)		Error	No
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 13
+Number of simulation errors: 95
+ExplorerRun.0 completed. 
+Current time: Thu Mar 12 16:23:42 2026 

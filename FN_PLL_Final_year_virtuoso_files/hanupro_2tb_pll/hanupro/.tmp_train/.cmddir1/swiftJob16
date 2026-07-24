@@ -1,0 +1,18 @@
+#!/bin/sh
+
+cd "/home/train/hanupro"
+
+export CDS_USE_XVFB=1
+
+/home/install/IC618/tools.lnx86/dfII/bin/spectreMonitor -mpssession "virtuoso5757" -mpshost "vlsi44.blr.amrita.edu" --davinciService DaVinciService_5757_1779090288 --axlsession fnxSession3 -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D698AFB6DFC06D24D21BED711D264887972B3E36DFC06867C66E38F1FFC06BC4D66E38F1FFC06BC4D0CEF914DE254D64100001E50 -beanhost "vlsi44.blr.amrita.edu" -beanport 11300 -beanLogFile "/home/train/hanupro/logs_train/logs1/amps_Job16.log"  -beanbinlog "" --domain 0 --interactive yes --netlistOpt no --useMultiPointEvaluation yes --evalSimParallel no --maxSims 0 --historyName "ExplorerRun.0" --historyUUID ""  --exprEvaluator vds --mcMapping mc1.mapping --checkLogStatusInterval 0  --exprEvalMaxTries 3  --maxNFSSyncWait 60  --virtuosoBinary "virtuoso" --guiDisplay vlsi44.blr.amrita.edu:1 --globalStatus 60  --evaluateMultiMC yes --evalOnSimFail SkipFailedAnalyses --numRetriesOnError 1 --fenixMode explorer --lingertimeout 300 --sdbLib hanus --sdbCell pll_loop --sdbView maestro --heartBeatFileDir /dev/shm --id 16 --uuid "d2469c84-74e4-40fa-a4fa-ca070ad247bb" --log "/home/train/hanupro/logs_train/logs1/Job16.log" &
+
+JOB_PID=$!
+HOST_NAME=$(hostname)
+printf "Simulation Monitor process '$JOB_PID' is starting up on host '$HOST_NAME'"
+wait $JOB_PID
+status=$?
+if [ $status != 0 ]; then
+  /home/install/IC618/tools.lnx86/bin/checkSysConf IC6.1.8 > /home/train/hanupro/logs_train/logs1/Job16.log.checkSysConf
+fi
+exit $status
+

@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      train
+HostName                       ece-vlsi-36
+ProcessIdentifier              23851
+ProcessCreationTime_UTC        1750914802
+ProcessCreationTime_Readable   Thu Jun 26 10:43:22 2025 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/train/hanupro/hanus/ppclnand/symbol/symbol.oa.cdslck
+TimeEditLocked                 Thu Jun 26 11:43:17 2025 IST

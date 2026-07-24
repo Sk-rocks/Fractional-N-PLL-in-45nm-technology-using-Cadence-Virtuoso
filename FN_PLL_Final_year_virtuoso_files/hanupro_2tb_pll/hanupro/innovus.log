@@ -1,0 +1,41 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Fri Jun 27 11:28:29 2025
+Host:		ece-vlsi-36 (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700T 25600KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[11:28:30.346489] Configured Lic search path (21.01-s002): 5280@cadenceserver
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> gui_select -rect {0.03600 0.07200 0.06400 0.04400}
+<CMD> highlight -index 1
+<CMD> gui_select -rect {0.01500 0.08900 0.05400 0.03700}
+<CMD> uiSetTool addWire
+**ERROR: (IMPSYT-6788):	Design not in memory
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Fri Jun 27 11:29:54 2025
+  Total CPU time:     0:00:15
+  Total real time:    0:01:56
+  Peak memory (main): 996.72MB
+
+
+*** Memory Usage v#1 (Current mem = 1010.938M, initial mem = 483.863M) ***
+*** Message Summary: 0 warning(s), 2 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:14.8, real=0:01:25, mem=1010.9M) ---

@@ -1,0 +1,500 @@
+\# Program start time:     UTC 2026.03.12 10:13:17.609
+\# Local time: IST (UTC+05:30) 2026.03.12 15:43:17.609
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 11/15/2022 19:45 (cpgbld01) $
+\o Hierarchy:		/home/install/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.29  (64-bit addresses)
+\# Command line:	/home/install/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost vlsi44.blr.amrita.edu -beanport 11300 -beanbinlog  -beanLogFile /home/train/hanupro/logs_train/logs1/amps_Service13.log -mpssession virtuoso5427 -mpshost vlsi44.blr.amrita.edu -davinciService DaVinciService_5427_1773306484 -axlSession fnxSession1 -axlServiceIdFlag 13 -uuid 23f997db-cbb8-43f4-aaa5-5afb18a668bf -heartbeat /dev/shm/swift-heartbeat.Ol53o5MNLI -log /home/train/hanupro/logs_train/logs1/Service13.log -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D698AFB6DFC06D24D21BED711D264887972B3E36DFC06867C66E38F1FFC06BC4D66E38F1FFC06BC4D0F511EA36DBAD5FF00001E79 -interactive -offlineExprEval -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	vlsi44.blr.amrita.edu (x86_64)
+\# Operating system:	Linux 4.18.0-425.3.1.el8.x86_64 #1 SMP Fri Sep 30 11:45:06 EDT 2022
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1479 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        613 MB
+\# Available memory:	     45,020 MB
+\# System memory:	     47,707 MB
+\# Maximum memory size:	     47,214 MB
+\# Max mem available:	     45,141 MB
+\# Initial memory used:	        121 MB
+\#        process size:	      1,838 MB
+\# Thread usage limits (effective/default):	maxthreads 62575/62575 maxload 20.00/20.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		train
+\o Working Directory:	vlsi44.blr.amrita.edu:/home/train/hanupro
+\# Process Id:		171162
+\o 
+\o COPYRIGHT (C) 1992-2022  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2022  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\# Memory report: using         267 MB, process size 2,129 MB at UTC 2026.03.12 10:13:19.047
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso5427, host=vlsi44.blr.amrita.edu). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 171162 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [15:43:17.175529] Configured Lic search path (22.01-s002): 5280@14.139.1.126
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 171162' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\# [15:43:20.124081] Periodic Lic check successful
+\# [15:43:20.124081] Feature usage summary:
+\o Loading simui.cxt 
+\o [2026-03-12 15:43:20.136 +0530] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:20.177 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "4510"}
+\o [2026-03-12 15:43:20.177 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "hanus_vco_tb_1", "testnameKey": "hanus_vco_tb_1"}
+\o Loading vdsil.cxt 
+\o *Warning* AXL Context Manager : job 13 is already registered. 
+\o 
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = hanus
+\o 	Cell         = vco_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ExplorerRun.0
+\o 	Results DB   = /home/train/hanupro/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0.rdb
+\o 	Results Dir  = /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/1/hanus_vco_tb_1
+\o 	Results Loc  = /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro
+\o 	Project Dir  = /home/train/simulation
+\o 	Setup DB loc = /home/train/hanupro/hanus/vco_tb_sk/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading gpdk045/libInit.il ...
+\o 	Loading gpdk045/loadCxt.ile ... done!
+\o 	Loading context 'gpdk045' from library 'gpdk045' ... done!
+\o 	Loading context 'pdkUtils' from library 'gpdk045' ... done!
+\e 	Loading gpdk045/gpdk045_customFilter.il ... *Error* eval: unbound variable - axlRegisterCustomDeviceFilter
+\o failed!
+\o 	Loading gpdk045/libInitCustomExit.il ... 
+\o 	Loading Environment Settings ...
+\o 	Loading Model Management File ...
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading UltraSim.cxt 
+\o Loading msgHandler.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 	Loading gpdk045/gpdk045_PDKRegistrations.il ... done!
+\o 
+\o   *************************************************************           
+\o   *              Cadence Design Systems, Inc.                 *           
+\o   *                                                           *           
+\o   *                    Generic 45nm PDK                       *           
+\o   *                        (gpdk045)                          *           
+\o   *                                                           *           
+\o   *************************************************************           
+\o 	
+\o 
+\o 	VERSION: 4.0 (17-June-2014)
+\o 
+\o done!
+\# Memory report: using         422 MB, process size 2,357 MB at UTC 2026.03.12 10:13:22.122
+\o Failed to load gpdk045/libInit.il successfully!
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading elec.cxt 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.8"
+\o Setting var vdd = "1.2"
+\o Loading monte.cxt 
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/psf/hanus_vco_tb_1
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o Initializing the control file using cp:
+\o     cp /home/install/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/psf/hanus_vco_tb_1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting Mar 12 15:43:22 2026
+\o Loading json.cxt 
+\o End netlisting Mar 12 15:43:22 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   19
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:22.832 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "hanus_vco_tb_1", "testnameKey": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:23.833 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 1, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "7675"}
+\o [2026-03-12 15:43:23.834 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting temp(T) = 27
+\o Setting var vc = "0.8"
+\o Setting var vdd = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/1/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/1/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:24.231 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 754.4961 MBytes, peak memory used: 754.4961 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 1, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:24.231 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:24.232 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 2, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "10629"}
+\o [2026-03-12 15:43:24.232 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 2, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/2/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/2/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:24.478 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 757.1250 MBytes, peak memory used: 757.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 2, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:24.478 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 2, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:24.479 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 3, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "12186"}
+\o [2026-03-12 15:43:24.479 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 3, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.109090909090909"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/3/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/3/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:24.766 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 3, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:24.766 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 3, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:24.767 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 4, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "13759"}
+\o [2026-03-12 15:43:24.767 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 4, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.218181818181818"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/4/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/4/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:25.000 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 4, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:25.000 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 4, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:25.001 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 5, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "15332"}
+\o [2026-03-12 15:43:25.001 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 5, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.327272727272727"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/5/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/5/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:25.242 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 5, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:25.242 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 5, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:25.242 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 6, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "16905"}
+\o [2026-03-12 15:43:25.242 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 6, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.436363636363636"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/6/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/6/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:25.489 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 6, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:25.490 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 6, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:25.491 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 7, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "18478"}
+\o [2026-03-12 15:43:25.491 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 7, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.545454545454545"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/7/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/7/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:25.730 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 7, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:25.730 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 7, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:25.731 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 8, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "20051"}
+\o [2026-03-12 15:43:25.731 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 8, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.654545454545455"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/8/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/8/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:25.971 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 8, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:25.971 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 8, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:25.972 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 9, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "21624"}
+\o [2026-03-12 15:43:25.972 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 9, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.763636363636364"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/9/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/9/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:26.264 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 9, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:26.264 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 9, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:26.265 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 10, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "23197"}
+\o [2026-03-12 15:43:26.265 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 10, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.872727272727273"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/10/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/10/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:26.514 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 10, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:26.514 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 10, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:26.515 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 11, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "24776"}
+\o [2026-03-12 15:43:26.515 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 11, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "0.981818181818182"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/11/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/11/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:26.755 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 11, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:26.755 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 11, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:26.756 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 12, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "26355"}
+\o [2026-03-12 15:43:26.756 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 12, "testname": "hanus_vco_tb_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "1.09090909090909"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/12/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/12/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:27.005 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 12, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:27.006 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 12, "testname": "hanus_vco_tb_1"}
+\o [2026-03-12 15:43:27.006 +0530] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 13, "testname": "hanus_vco_tb_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/home/train/hanupro/logs_train/logs1/Service13.log", "logFileSize": "27933"}
+\o [2026-03-12 15:43:27.006 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 13, "testname": "hanus_vco_tb_1"}
+\# Available memory:         44,997 MB at UTC 2026.03.12 10:13:27.101
+\# Memory report: Maximum memory size now 45,449 MB at UTC 2026.03.12 10:13:27.101
+\# Thread usage report: 26 active threads, active load 1.40 at UTC 2026.03.12 10:13:27.101
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var vc = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/13/hanus_vco_tb_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/train/simulation/hanus/vco_tb_sk/maestro/results/maestro/ExplorerRun.0/13/hanus_vco_tb_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-03-12 15:43:27.234 +0530] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 759.1250 MBytes, peak memory used: 759.1250 MBytes {"hostname": "vlsi44.blr.amrita.edu", "processid": 171162, "testname": "hanus_vco_tb_1", "point": 13, "logfile": "/home/train/hanupro/logs_train/logs1/Service13.log"}
+\o [2026-03-12 15:43:27.234 +0530] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 13, "testname": "hanus_vco_tb_1"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [15:48:30.477368] Cdslmd servers:5280@14.139.1.126
+\# [15:48:30.477377] Feature usage summary:
+\# Memory report: on exit            451 MB, process size 2,392 MB at UTC 2026.03.12 10:18:30.477
+\# Memory report: peak usage         451 MB, process size 2,392 MB

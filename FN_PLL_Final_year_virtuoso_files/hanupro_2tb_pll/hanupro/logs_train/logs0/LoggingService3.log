@@ -1,0 +1,4 @@
+[Logging Service: 3]
+[2025-11-20 10:06:16.227 +0530] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/train/hanupro/hanus/cs_vco/maestro/results/maestro"}
+[2025-11-20 10:06:16.228 +0530] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "vlsi43.blr.amrita.edu", "processid": 28949, "logfile": "/home/train/hanupro/logs_train/logs0/LoggingService3.log"}
+[2025-11-20 10:17:02.521 +0530] [ERROR] [cadence.virtuoso.ade.loggingservice] - historySqliteRecorder::insert failed {"reason": "attempt to write a readonly database"}

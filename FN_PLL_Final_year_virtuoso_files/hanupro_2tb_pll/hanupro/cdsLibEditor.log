@@ -1,0 +1,15 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 6.1.8 - CAT37 10/18/2022 20:13 (sjfdcl1032) $
+\o Sub version:		sub-version  s292 
+\o Arguments:		-cdslib /home/train/hanupro/cds.lib -mpssession virtuoso13371 -mpshost vlsi43.blr.amrita.edu -mpsversion 6.18 
+\o Working Directory:	vlsi43.blr.amrita.edu:/home/train/hanupro
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.9.1
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "hanus"
+\a nrResizeWindow(cdsLibEditor list(200 227 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 1)
+\o Active cell: 0 1 "/home/train/hanupro/hanus"
+\a exit(0)

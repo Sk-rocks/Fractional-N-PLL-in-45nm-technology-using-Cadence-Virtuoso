@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      train
+HostName                       vlsi06.blr.amrita.edu
+ProcessIdentifier              12391
+ProcessCreationTime_UTC        1779261374
+ProcessCreationTime_Readable   Wed May 20 12:46:14 2026 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/train/Downloads/hanupro_2tb_pll/hanupro/hanus/mmfd_8bit/schematic/sch.oa.cdslck
+TimeEditLocked                 Thu May 21 09:21:50 2026 IST

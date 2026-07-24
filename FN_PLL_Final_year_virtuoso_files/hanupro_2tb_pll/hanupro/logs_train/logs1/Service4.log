@@ -1,0 +1,101 @@
+\# Program start time:     UTC 2026.05.19 12:07:36.470
+\# Local time: IST (UTC+05:30) 2026.05.19 17:37:36.470
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 11/15/2022 19:45 (cpgbld01) $
+\o Hierarchy:		/home/install/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.29  (64-bit addresses)
+\# Command line:	/home/install/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost vlsi44.blr.amrita.edu -beanport 11300 -beanbinlog  -beanLogFile /home/train/hanupro/logs_train/logs1/amps_Service4.log -mpssession virtuoso6828 -mpshost vlsi44.blr.amrita.edu -davinciService DaVinciService_6828_1779192018 -axlSession fnxSession1 -axlServiceIdFlag 4 -uuid 308656db-28c6-499c-a0fd-09c965793f54 -heartbeat /dev/shm/swift-heartbeat.N46ja3NPug -log /home/train/hanupro/logs_train/logs1/Service4.log -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D698AFB6DFC06D24D21BED711D264887972B3E36DFC06867C66E38F1FFC06BC4D66E38F1FFC06BC4D0CEFDD98AE81D64100001E76 -interactive -offlineExprEval -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	vlsi44.blr.amrita.edu (x86_64)
+\# Operating system:	Linux 4.18.0-425.3.1.el8.x86_64 #1 SMP Fri Sep 30 11:45:06 EDT 2022
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:3384 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        625 MB
+\# Available memory:	     45,709 MB
+\# System memory:	     47,707 MB
+\# Maximum memory size:	     47,202 MB
+\# Max mem available:	     45,830 MB
+\# Initial memory used:	        121 MB
+\#        process size:	      1,838 MB
+\# Thread usage limits (effective/default):	maxthreads 62575/62575 maxload 20.00/20.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		train
+\o Working Directory:	vlsi44.blr.amrita.edu:/home/train/hanupro
+\# Process Id:		12801
+\o 
+\o COPYRIGHT (C) 1992-2022  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2022  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pvsui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\# Memory report: using         273 MB, process size 2,134 MB at UTC 2026.05.19 12:07:38.107
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso6828, host=vlsi44.blr.amrita.edu). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 12801 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [17:37:36.175577] Configured Lic search path (22.01-s002): 5280@14.139.1.126
+\p > 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 12801' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\o Loading simui.cxt 
+\o [2026-05-19 17:37:39.101 +0530] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"hostname": "vlsi44.blr.amrita.edu", "processid": 12801, "logfile": "/home/train/hanupro/logs_train/logs1/Service4.log"}
+\# Available memory:         45,717 MB at UTC 2026.05.19 12:07:47.144
+\# Memory report: Maximum memory size now 46,037 MB at UTC 2026.05.19 12:07:47.144
+\# Thread usage report: 26 active threads, active load 1.40 at UTC 2026.05.19 12:07:47.144
+\o **** stopping dspf2oa nil 1 4
+\o Loading vdsil.cxt 
+\# Lic Summary:
+\# [17:42:42.286611] Cdslmd servers:5280@14.139.1.126
+\# [17:42:42.286616] Feature usage summary:
+\# Memory report: on exit            321 MB, process size 2,256 MB at UTC 2026.05.19 12:12:42.286
+\# Memory report: peak usage         321 MB, process size 2,256 MB

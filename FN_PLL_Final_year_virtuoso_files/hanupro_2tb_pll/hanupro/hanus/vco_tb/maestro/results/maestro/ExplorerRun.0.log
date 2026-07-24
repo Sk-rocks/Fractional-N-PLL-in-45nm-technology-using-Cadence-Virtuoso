@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu May 21 11:36:25 2026 
+Best design point: 1
+Design specs: 
+	hanus_vco_tb_1	corner	Nominal - 
+	output noise; 1M;(PM, DSB, dBc/Hz)		-78.09
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 1
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Thu May 21 11:36:38 2026 

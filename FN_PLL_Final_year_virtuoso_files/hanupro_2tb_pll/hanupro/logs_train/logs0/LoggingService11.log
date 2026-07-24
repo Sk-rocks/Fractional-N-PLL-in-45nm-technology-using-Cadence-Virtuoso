@@ -1,0 +1,3 @@
+[Logging Service: 11]
+[2026-02-03 11:45:06.111 +0530] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/train/hanupro/hanus/vco_new_1/maestro/results/maestro"}
+[2026-02-03 11:45:06.112 +0530] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "vlsi43.blr.amrita.edu", "processid": 98098, "logfile": "/home/train/hanupro/logs_train/logs0/LoggingService11.log"}

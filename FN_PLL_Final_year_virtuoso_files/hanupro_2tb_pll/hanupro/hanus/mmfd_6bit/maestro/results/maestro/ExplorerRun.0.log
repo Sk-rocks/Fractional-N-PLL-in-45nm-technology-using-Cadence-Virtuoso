@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Feb  9 11:16:04 2026 
+Best design point: 1
+Design specs: 
+	hanus_mmfd_6bit_1	corner	Nominal - 
+	input frequency		10G
+	output frequency		19.61M
+	division ratio		510
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 2
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Mon Feb  9 11:49:20 2026 

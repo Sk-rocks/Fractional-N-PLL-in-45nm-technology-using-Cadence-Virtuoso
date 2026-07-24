@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Tue Feb  3 12:14:58 2026 
+Best design point: 1
+Design specs: 
+	hanus_vco_new_1	corner	Nominal - 
+	freq		12.71G
+Design parameters: 
+
+ExplorerRun.0
+Number of points completed: 20
+Number of simulation errors: 0
+ExplorerRun.0 completed. 
+Current time: Tue Feb  3 12:25:38 2026 

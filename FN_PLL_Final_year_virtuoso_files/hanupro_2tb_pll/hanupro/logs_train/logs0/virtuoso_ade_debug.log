@@ -1,0 +1,29 @@
+[ADE GUI: ce45ffd1-b4e1-4242-96e0-130144c9c498]
+[2026-02-26 12:46:50.239 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - /home/train/hanupro/.tmp_train/.cmddir0/swiftLoggingService0 is starting {"logfile": "/home/train/hanupro/logs_train/logs0/LoggingService0.log"}
+[2026-02-26 12:46:50.343 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - /home/train/hanupro/.tmp_train/.cmddir0/swiftNetlistService1 is starting {"logfile": "/home/train/hanupro/logs_train/logs0/Service1.log"}
+[2026-02-26 12:46:50.344 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '6727' is starting up on host 'vlsi46.blr.amrita.edu' {"logfile": "/home/train/hanupro/logs_train/logs0/LoggingService0.log"}
+[2026-02-26 12:46:52.657 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - Netlist Service '6791' is starting up on host 'vlsi46.blr.amrita.edu' {"logfile": "/home/train/hanupro/logs_train/logs0/Service1.log"}
+[2026-02-26 12:48:01.895 +0530] [EVENT] [cadence.virtuoso.ade.gui] - NewHistoryCreated {"history": "ExplorerRun.0", "event": "NewHistoryCreated", "EventSource": "ADE GUI", "HistoryName": "ExplorerRun.0", "WorkDir": "/home/train/hanupro", "HistorySimDir": "/home/train/simulation/hanus/vco_tb/maestro/results/maestro/ExplorerRun.0", "HistoryResultsDir": "/home/train/hanupro/hanus/vco_tb/maestro/results/maestro"}
+[2026-02-26 12:48:01.895 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - History Setup {"hostname": "vlsi46.blr.amrita.edu", "processid": 4576, "history": "ExplorerRun.0", "logfile": "/home/train/hanupro/logs_train/logs0/virtuoso_ade_debug.log", "jobmode": "LSCS", "runmode": "Single Run, Sweeps and Corners", "lib": "hanus", "cell": "vco_tb", "view": "maestro", "icversion": "sub-version  IC6.1.8-64b.500.29 ", "runstart": "Thu Feb 26 12:48:01 2026\n", "timezonelocal": "+000", "spectreversion": "unknown", "jobpolicyname": "", "maxjobs": "unknown", "ncjobpolicyname": "", "ncmaxjobs": "unknown", "numtests": "1", "runfinished": "unknown", "runelapsed": "-1", "numcorners": "1"}
+[2026-02-26 12:48:02.377 +0530] [INFO] [cadence.virtuoso.ade.pointevaluator] - Submitted {"history": "ExplorerRun.0"}
+[2026-02-26 12:48:07.432 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - /home/train/hanupro/.tmp_train/.cmddir0/swiftJob2 is starting {"logfile": "/home/train/hanupro/logs_train/logs0/Job2.log"}
+[2026-02-26 12:48:07.544 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - Simulation Monitor process '8226' is starting up on host 'vlsi46.blr.amrita.edu' {"logfile": "/home/train/hanupro/logs_train/logs0/Job2.log"}
+[2026-02-26 12:48:50.052 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - ln: failed to create symbolic link '/home/train/simulation/hanus/vco_tb/maestro/results/maestro/ExplorerRun.0/1/hanus_vco_tb_1/netlist/exprOutputs.log': File exists
+ {"logfile": "/home/train/hanupro/logs_train/logs0/Job2.log"}
+[2026-02-26 12:48:50.054 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - ln: failed to create symbolic link '/home/train/simulation/hanus/vco_tb/maestro/results/maestro/ExplorerRun.0/1/hanus_vco_tb_1/netlist/amps_evaluator.log': File exists
+ {"logfile": "/home/train/hanupro/logs_train/logs0/Job2.log"}
+[2026-02-26 12:48:51.407 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 1, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:49:30.405 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 2, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:50:08.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 3, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:50:44.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 4, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:51:17.413 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 5, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:51:48.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 6, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:52:04.407 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 7, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:52:16.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 8, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:52:32.405 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 9, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:52:43.405 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 10, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:52:53.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 11, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:53:05.406 +0530] [INFO] [cadence.virtuoso.ade.gui] - Point completed {"history": "ExplorerRun.0", "point": 12, "testname": "hanus_vco_tb_1"}
+[2026-02-26 12:53:05.493 +0530] [EVENT] [cadence.virtuoso.ade.gui] - HistoryFinished {"history": "ExplorerRun.0", "event": "HistoryFinished", "EventSource": "ADE GUI", "HistoryName": "ExplorerRun.0"}
+[2026-02-26 12:53:11.831 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - Netlist Service '6791' stopped with exit code '0' {"logfile": "/home/train/hanupro/logs_train/logs0/Service1.log"}
+[2026-02-26 13:08:14.718 +0530] [PROCESS] [cadence.virtuoso.ade.gui] - Logging Service '6727' stopped with exit code '0' {"logfile": "/home/train/hanupro/logs_train/logs0/LoggingService0.log"}

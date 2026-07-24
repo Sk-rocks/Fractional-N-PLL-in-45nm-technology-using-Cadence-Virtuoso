@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      train
+HostName                       vlsi43.blr.amrita.edu
+ProcessIdentifier              196483
+ProcessCreationTime_UTC        1763180754
+ProcessCreationTime_Readable   Sat Nov 15 09:55:54 2025 IST
+AppIdentifier                  Unknown Application
+OSType                         lnx86
+ReasonForPlacingEditLock       lock for simulation monitor log file
+FilePathUsedToEditLock         /home/train/hanupro/logs_train/logs0/Job12.log
+TimeEditLocked                 Sat Nov 15 09:55:54 2025 IST

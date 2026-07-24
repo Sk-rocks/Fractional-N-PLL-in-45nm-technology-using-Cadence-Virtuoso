@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      train
+HostName                       vlsi43.blr.amrita.edu
+ProcessIdentifier              5717
+ProcessCreationTime_UTC        1770009430
+ProcessCreationTime_Readable   Mon Feb  2 10:47:10 2026 IST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/train/hanupro/hanus/vco_delay_cell/symbol/symbol.oa.cdslck.dirlck
+TimeEditLocked                 Mon Feb  2 11:51:17 2026 IST

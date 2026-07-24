@@ -1,0 +1,115 @@
+#!/bin/bash
+
+startup_timeout=30
+heartbeat_timeout=10
+terminate_timeout=10
+check_service_file=1
+service_file=`dirname /home/train/hanupro/logs_train/logs1/LoggingService15.log`
+service_file=$service_file/.DaVinciService_5757_1779090288
+
+cd /home/train/hanupro
+
+terminate_job() {
+  if [ -n "$JOB_PID" ]; then
+    kill -s SIGTERM $JOB_PID
+    # If SIGTERM successully causes the job to exit within $terminate_timeout then
+    # handle_sigchild will interrupt the sleep and the script will exit.
+    sleep $terminate_timeout
+    # Otherwise we will fall through to send SIGKILL.
+    kill -s SIGKILL $JOB_PID
+  fi
+}
+
+handle_sigchld() {
+  # SIGCHLD is received for any child process exit, so we first need to verify
+  # whether it's the job process that has exited.
+  if [ -n "$JOB_PID" -a ! -d "/proc/$JOB_PID" ]; then
+    wait $JOB_PID
+    EXIT_CODE=$?
+    printf "Logging Service '$JOB_PID' stopped with exit code '$EXIT_CODE'"
+    unset JOB_PID
+    exit $EXIT_CODE
+  fi
+}
+
+handle_sigterm() {
+  # If the script receives a signal to terminate, then pass this on to the job process
+  terminate_job
+}
+
+handle_exit() {
+  # Ensure that the job process and heartbeat file are cleaned up up on exit
+  # (but note that this handler will not be called if the script receives SIGKILL)
+  # Here we directly send SIGKILL to the job process because it should already have
+  # been terminated more cleanly via terminate_job. So something's gone wrong, and
+  # we don't want to hang around in the exit handler by trying a cleaner termination.
+  [ -n "$JOB_PID" ] && kill -s SIGKILL "$JOB_PID" >& /dev/null && wait $JOB_PID
+  [ -n "$heartbeat" ] && /bin/rm -f "$heartbeat"
+}
+
+## Must enable job control in order to trap SIGCHLD
+set -o monitor
+trap "handle_sigchld" SIGCHLD
+trap "handle_sigterm" SIGHUP SIGTERM
+trap "handle_exit" EXIT
+
+# Create heartbeat file. I considered using the job's process ID to make the filename
+# unique but process IDs are eventually recycled by the kernel, so there is a small risk
+# the file might already exist (because it was not cleaned up properly) and be owned by
+# a different user so we may not have permission to overwrite it. Hence the use of mktemp
+# which guarantees atomic creation of a file with a unique name. The heartbeat filename
+# must be passed into the job process, so it knows which file to touch.
+heartbeat=`mktemp /dev/shm/swift-heartbeat.XXXXXXXXXX`
+last_heartbeat=`stat -c %y "$heartbeat"`
+
+/home/install/IC618/tools.lnx86/dfII/bin/maeLoggingservice -beanhost "vlsi44.blr.amrita.edu" -beanport 11300 -beanbinlog "" -mpssession "virtuoso5757" -mpshost "vlsi44.blr.amrita.edu" -davinciService DaVinciService_5757_1779090288 -axlSession fnxSession3 -axlServiceIdFlag 15 -uuid "c611b2f0-c3e2-4e1d-bdaf-60f0059fe502" -heartbeat "$heartbeat" -log /home/train/hanupro/logs_train/logs1/LoggingService15.log   -dbBasePath "/home/train/hanupro/hanus/pll_loop/maestro/results/maestro"   1>/dev/null  2>/dev/null  &
+
+JOB_PID=$!
+HOST_NAME=$(hostname)
+
+printf "Logging Service '$JOB_PID' is starting up on host '$HOST_NAME'"
+status="starting"
+
+# Use a separate startup timeout because it can take a significant amount of time to
+# start up the job process, and it allows use of a finer timeout granularity to
+# detect unresponsives once it is running.
+
+start=0
+while [ $start -lt $startup_timeout ]; do
+  if [[ `stat -c %y $heartbeat` > $last_heartbeat ]]; then
+    start=$[$startup_timeout+1]
+  else
+    start=$[$start+1]
+    sleep 1
+  fi
+done
+
+# Loop while process is running. Strictly speaking this test should not be necessary
+# because the script receives SIGCHLD when the process stops and will then exit
+# itself. But it's left in for robustness.
+while [ -d "/proc/$JOB_PID" ]; do
+
+  ## [[ ]] is a bash extension. It's used so that we can compare the timestamp
+  ## strings with '>' (string lexicographical sort order). And note that it
+  ## does not require vars to be in quotes to handle empty values and spaces.
+  if [[ ! `stat -c %y $heartbeat` > $last_heartbeat && ($check_service_file == 0 || ($check_service_file != 0 && ! -e $service_file)) ]]; then
+    if [[ $status == "starting" ]]; then
+      cdsmps -c 'mpsSend(mpsMakePattern("ADE-service-status-DaVinciService_5757_1779090288-fnxSession3" "{\"jobId\":15,\"status\":\"starttimeout\"}"))'
+    fi
+    # No new heartbeat since last check implies an unresponsive process
+    # Non-empty file means that the heartbeat check is temporarily disabled
+    if [[ -z $heartbeat ]] ; then
+        terminate_job
+    fi
+  else
+    last_heartbeat=`stat -c %y "$heartbeat"`
+  fi
+  status="started"
+
+  heartbeat_sec=0
+  while [ $heartbeat_sec -lt $heartbeat_timeout -a -d "/proc/$JOB_PID" ]; do
+    heartbeat_sec=$[$heartbeat_sec + 1]
+    sleep 1
+  done
+
+done
